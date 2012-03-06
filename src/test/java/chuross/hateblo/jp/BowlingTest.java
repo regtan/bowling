@@ -30,15 +30,12 @@ public class BowlingTest {
 		
 		
 		//checkInputLengthテスト
-		inputArray = new String[] {"2", "9"};
+		inputArray = new String[] {"2", "11"};
 		assertFalse(bowling.checkInputLength(inputArray, inputArray.length, 3));
 		inputArray = new String[] {"7", "3"};
 		assertTrue(bowling.checkInputLength(inputArray, inputArray.length, 3));
 		inputArray = new String[] {"10", "13", "10"};
-		assertFalse(bowling.checkInputLength(inputArray, inputArray.length, 3));
-		
-		
-		
+		assertFalse(bowling.checkInputLength(inputArray, inputArray.length, 3));		
 		
 	}
 	
